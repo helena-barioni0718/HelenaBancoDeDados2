@@ -1,0 +1,29 @@
+-- Exercicio1
+select nome_depto from departamento
+where qtdfuncionariosdepto > 15 ;
+
+-- Exercicio2
+select nome_funcionario from funcionario
+where salario >= 4000;
+
+-- Exercicio3
+select AVG (salario) from funcionario;
+
+-- Exercicio4
+select round(avg(salario),2) as media_salario from funcionario;
+
+-- Exercicio5
+select nome_funcionario from funcionario
+where nome_funcionario = "Gomes";
+
+-- Exercicio6
+select salario * 12 as salario_anual from funcionario;
+
+-- Exercicio7
+select max(salario) as maior_salario from funcionario;
+
+-- Exercico8
+select nome_funcionario,salario from funcionario order by salario;
+
+-- Exercicio9
+select max(data_admissao) as maior_tempo_serviço from funcionario;
